@@ -14,7 +14,6 @@ window.addEventListener("load", function() {
             hoursArray.sort(function(a,b){return b[1]-a[1]});
 
             for (let i = 0; i < json.length; i++) {
-                // console.log(json[hoursArray[i][0]]["firstName"] + json[hoursArray[i][0]]["active"]);
                 if (json[hoursArray[i][0]]["active"] === true) {
                     container.innerHTML += `
                         <div class="astronaut">
